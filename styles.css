@@ -1,0 +1,67 @@
+:root {
+    --bg: #090b10;
+    --text: #e8edf5;
+    --purple: #9b5cff;
+    --dim: #8b95a8;
+    --green: #00ff9c;
+    --red: #ff3864;
+    --font-title: "Orbitron", sans-serif;
+    --font-body: "JetBrains Mono", monospace;
+}
+body {
+    background: radial-gradient(ellipse at top, rgba(155, 92, 255, 0.1), transparent 55%), var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    font-family: var(--font-body);
+}
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    display: none;
+}
+.active {
+    display: flex;
+}
+.header {
+    font-size: 3rem;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 24px color-mix(in srgb, var(--purple) 40%, transparent);
+    font-family: var(--font-title);
+    margin-bottom: 0.75rem;
+}
+.subheader {
+    color: var(--red); 
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    margin-bottom: 0.35rem;
+}
+.instruction {
+    color: var(--dim);
+    margin-bottom: 2rem;
+}
+.btn {
+    font-family: var(--font-title);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0.75rem 2rem;
+}
+.btn-primary {
+    color: var(--green);
+    border-color: var(--green);
+    border-style: solid;
+    border-width: 1px;
+}
+.btn-primary:hover {
+    background: var(--green);
+    color: var(--bg);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--green) 35%, transparent);
+}
