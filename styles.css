@@ -97,6 +97,36 @@ body {
     font-style: normal;
     color: var(--purple);
 }
+.room-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+.object {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: var(--dim);
+    padding: 1.2rem 0.75rem;
+    font-family: var(--font-title);
+}
+.object-wide {
+    grid-column: span 2;
+}
+.object-icon {
+    font-size: 2rem;
+}
+.object-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
 footer {
     width: 100%;
     background: var(--secondary-bg);
