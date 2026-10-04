@@ -1,3 +1,7 @@
-# escape-room
+# Escape Room
 
-This is my 1 project
+To run the app locally, run these commands in the terminal:
+
+```bash
+cd backend
+python -m uvicorn main:app
