@@ -18,9 +18,9 @@
         <section id="game-screen" class="page">
             <header class="top-bar">
                 <span class="logo">🔐 ESCAPE: ROOM 13</span>
-                <div id="locks" class="locks">🔒 🔒 🔒 🔒 🔒</div>
+                <div id="locks" class="locks">🔒 🔒 🔒 🔒 </div>
             </header>
-            <p class="intro">You wake up in a dark room. <em>Five locks stand between you and freedom.</em></p>
+            <p class="intro">You wake up in a dark room. <em>Four locks stand between you and freedom.</em></p>
             <section class="room-grid">
                 <button class="object" data-object="painting">
                     <span class="object-icon">🖼️</span>
@@ -38,10 +38,16 @@
                     <span class="object-icon">📦</span>
                     <span class="object-label">Box</span>
                 </button>
-                <button class="object object-wide" data-object="door">
+                <button class="object object-wide" data-object="door" id="exit-door">
                     <span class="object-icon">🚪</span>
                     <span class="object-label">Exit</span>
                 </button>
+            </section>
+            <section class="inventory-box">
+                <h2>✅ Solved</h2>
+                <ul id="solved-log">
+                    <li class="empty">Nothing yet…</li>
+                </ul>
             </section>
             <footer>
                 <p class="message">Explore the room. Click objects to investigate.</p>
